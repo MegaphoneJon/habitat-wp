@@ -28,7 +28,8 @@ function habitat_wp_color_override() {
   <style type="text/css">
   #wpadminbar{background:{$menubarColor};}
   </style>
-  HTML;
+HTML;
+
     echo $html;
   }
 
