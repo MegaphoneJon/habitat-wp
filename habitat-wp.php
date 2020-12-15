@@ -38,6 +38,9 @@ function habitat_wp_color_override() {
  * The admin bar color picker.
  */
 function habitat_wp_getcolor() {
+  if (!defined('HABITAT_ENVIRONMENT')) {
+    return NULL;
+  }
   switch (HABITAT_ENVIRONMENT) {
     case 'Dev':
       // Red.
